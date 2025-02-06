@@ -1,0 +1,185 @@
+<html lang="en"><head>
+    <title>Jenga</title>
+    <meta name="description" content="Play Jenga Online Online Edtion No Download for Free at YaksGames. Jenga Online is a physics game. In the game, you need to click &amp; drag on the blocks to move them around.">
+    <meta name="csrf-token" content="YsLKOH3sYX7lD3EjIQF9iqYj9WGlGo3PPL7HaGGW">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="robots" content="noindex">
+    <meta property="og:site_name" content="YaksGames">
+    <meta property="og:url" content="https://yaksgames.com/games/jenga-online/G99CEB9263">
+    <meta property="og:image" content="https://image.yaksgames.com/v2/game/e/9/2/e92a1662f0b0895b3cfdbffe2941e084.jpg">
+    <meta property="og:title" content="Jenga Online Game - Play Jenga Online Online for Free at YaksGames">
+    <meta property="og:description" content="Play Jenga Online Online Edtion No Download for Free at YaksGames. Jenga Online is a physics game. In the game, you need to click &amp; drag on the blocks to move them around.">
+    <link href="jenga.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="canonical" href="https://yaksgames.com/games/jenga-online/G99CEB9263">
+    <link rel="stylesheet" href="https://yaksgames.com/css/app-m.css?id=1b3e30dacd677ddb6ace">
+    <style>body{background-color: #313131;}</style>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/gtm/js?id=GTM-KQ9R662&amp;t=gtag_UA_127645256_1&amp;cid=2032270012.1662557648"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-127645256-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-127645256-1', {'optimize_id': 'GTM-KQ9R662', 'use_amp_client_id': true});
+    </script>
+</head>
+<body>
+
+
+<script type="text/javascript" src="https://yaksgames.com/js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="https://yaksgames.com/js/ads-adsbygoogle.js"></script>
+<script type="text/javascript">
+    var width = $(window).width();
+    var height = $(window).height();
+    function getParentUrl() {
+        var url = null;
+        if (parent !== window) {
+            try {
+                url =  parent.location.host.split('.').slice(-2).join('.')
+            } catch (e) {
+                url = document.referrer.split('.').slice(-2).join('.');
+            }
+        }
+        return url;
+    }
+    var topDomain = getParentUrl();
+    console.log(topDomain);
+    if ((topDomain === "yaksgames.com") || (topDomain === "game.com") || (topDomain === "promopure.net")) {
+        if (self.frameElement && self.frameElement.tagName === "IFRAME") {
+            console.log("IFRAME");
+            $(".NewGameMenu").remove();
+            startGame();
+            console.log("startGame");
+        } else {
+            PlayAds();
+            console.log("NO IFRAME");
+            console.log("PlayAds");
+            NewGameMenu();
+        }
+    } else {
+        console.log("PlayAds1");
+        PlayAds();
+        NewGameMenu();
+        $(".GoToHome").attr("target", "_blank");
+    }
+
+    function clickBlankButton() {
+        $.ajax({
+            type: 'GET',
+            url: "/click-blank-button?stringId=G99CEB9263",
+            dataType: 'json'
+        });
+    }
+
+    function NewGameMenu() {
+        $(".NewGameMenu").show();
+        $.getScript("https://yaksgames.com/js/jsshare.js");
+        $(".share-closed").remove();
+        $(".NewGameMenuContentA a").css({"width": "50%", "margin": "0"});
+        $(".details-share a").show().attr("data-url", "https://yaksgames.com/games/jenga-online/G99CEB9263");
+    }
+
+    function PlayAds() {
+        var isShowAd = '1';
+        if ((!isShowAd) || (typeof(killads) === 'undefined')) {
+            console.log("killads -- undefined");
+            startGame();
+        }else {
+            $.when(
+                $.getScript("//imasdk.googleapis.com/js/sdkloader/ima3.js"),
+                $.getScript("https://yaksgames.com/js/AdsNew.js"),
+                $.Deferred(function (deferred) {
+                    $(deferred.resolve);
+                })
+            ).done(function () {
+                $("body").append("<div id='mainContainer'><div id='ContentElementBox'><video id='contentElement'></video></div><div id='adContainer'></div></div>").trigger('create');
+                try {
+                    var googleAds = new GoogleAds(
+                        document.getElementById('adContainer'),
+                        document.getElementById('contentElement'),
+                        width, height,
+                        function (action) {
+                            if (action === GoogleAds.CallbackAction.CONTENT_PLAY) {
+                                $("#mainContainer").remove();
+                                startGame();
+                                console.log("ads");
+                            }
+                        });
+                    googleAds.playAds();
+                } catch (e) {
+                    $("#mainContainer").remove();
+                    startGame();
+                    console.log("no ads");
+                }
+            })
+        }
+    }
+    function startGame() {
+        var is_blank = '0';
+        if (is_blank === '1') {
+            $(".spinner,.share-closed").remove();
+            $.getScript("https://yaksgames.com/js/jsshare.js");
+            $("a.social_share").attr("data-url", "https://yaksgames.com/games/jenga-online/G99CEB9263");
+            $(".NewGameMenuContent .details-share-title,.NewGameMenuContent .details-share").remove();
+            $(".NewGameMenuContentA").css("padding-bottom", "0");
+        } else {
+            var is_iframe = '1';
+            if (is_iframe === '0') {
+                var isDesktop = '1';
+                if(isDesktop === "1"){
+                    document.getElementById("spinner").style.display = "none";
+                    document.body.innerHTML +="<embed id='iframe' height='100%' width='100%' src='https://chandlerprall.github.io/Physijs/examples/jenga.html' type='application/x-shockwave-flash'></embed>";
+                }else {
+                    $(".notAvailable").show();
+                }
+            }else {
+                if ($("#iframe").length === 0) {
+                    $(".spinner").show();
+                    var iframe = document.createElement("iframe");
+                    iframe.src = "https://chandlerprall.github.io/Physijs/examples/jenga.html";
+                    iframe.id = "iframe";
+                    iframe.height = height;
+                    iframe.width = width;
+                    iframe.frameborder = "0";
+                    iframe.scrolling = "no";
+                    if (iframe.attachEvent) {
+                        iframe.attachEvent("onload", function () {
+                            $(".spinner").show();
+                        });
+                    } else {
+                        iframe.onload = function () {
+                            $(".spinner").remove();
+                        };
+                    }
+                    $("body").append(iframe);
+                }
+            }
+        }
+    }
+    $(window).resize(function () {
+        if ($("#iframe").length === 1) {
+            document.getElementById("iframe").height = $(window).height();
+            document.getElementById("iframe").width = $(window).width();
+        }
+    });
+    function RefreshGames() {
+        $("#iframe").remove();
+        PlayAds();
+    }
+    $("#NewGameMenu").click(function () {
+        $(".NewGameMenuMain").toggle();
+    });
+    if (window.location.host !== "yaksgames.com"){
+        $(".social_share").attr("data-url", "https://yaksgames.com/games/jenga-online/G99CEB9263");
+    }
+    var shareItems = document.querySelectorAll('.social_share');
+    for (var i = 0; i < shareItems.length; i += 1) {
+        shareItems[i].addEventListener('click', function share(e) {
+            return JSShare.go(this);
+        });
+    }
+</script><iframe src="https://chandlerprall.github.io/Physijs/examples/jenga.html" id="iframe" height="800" width="2228" scrolling="no"></iframe>
+
+
+</body></html>

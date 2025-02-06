@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>search</title>
+	<link rel="icon" type="text/css" href="search.png">
+	<style type="text/css">
+		body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 65%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+#myMenu li a:hover {
+  background-color: #ddd;
+}
+
+* {
+  box-sizing: border-box;
+}
+h3:hover {
+  background-color: #666666;
+}
+h3 {
+  padding: 12px;
+}
+
+	</style>
+</head>
+<body>
+<div class="row">
+  <div class="left" style="background-color:#bbb;">
+    <h2>Search</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+      <h3>Countries</h3>
+      <li><a href="#">Greenland</a></li>
+      <li><a href="#">Canada</a></li>
+      <li><a href="#">USA(united states of america)</a></li>
+      <li><a href="#">Mexico</a></li>
+      <li><a href="#">Guatemala</a></li>
+      <li><a href="#">Belize</a></li>
+      <li><a href="#">El salvador</a></li>
+      <li><a href="#">Nicaragua</a></li>
+      <li><a href="#">Honduras</a></li>
+      <li><a href="#">Costa rica</a></li>
+      <li><a href="#">Panama</a></li>
+      <li><a href="#">Bahamas</a></li>
+      <li><a href="#">Haiti</a></li>
+      <li><a href="#">Dominican republic</a></li>
+      <li><a href="#">Cuba</a></li>
+      <li><a href="#">Puberto rico</a></li>
+      <li><a href="#">Jamaica</a></li>
+      <li><a href="#">Trindad & tobago</a></li>
+      <li><a href="#">Saint kitts & nevis</a></li>
+      <li><a href="#">Saint lucia</a></li>
+      <li><a href="#">Guyana</a></li>
+      <li><a href="#">Barbados</a></li>
+      <li><a href="#">Antigua & barbuda</a></li>
+      <li><a href="#">Brazil</a></li>
+      <li><a href="#">Bolivia</a></li>
+      <li><a href="#">Argentina</a></li>
+      <li><a href="#">Chile</a></li>
+      <li><a href="#">Colombia</a></li>
+      <li><a href="#">Ecuador</a></li>
+      <li><a href="#">Venezuelia</a></li>
+      <li><a href="#">Guyana</a></li>
+      <li><a href="#">Peru</a></li>
+      <li><a href="#">Paraguay</a></li>
+      <li><a href="#">Surname</a></li>
+      <li><a href="#">Uruguay</a></li>
+      <li><a href="#">Russia(european)</a></li>
+      <li><a href="#">Turkey(european)</a></li>
+      <li><a href="#">Albania</a></li>
+      <li><a href="#">Andorra</a></li>
+      <li><a href="#">Austria</a></li>
+      <li><a href="#">Belrus</a></li>
+      <li><a href="#">Belgium</a></li>
+      <li><a href="#">Bosnia & herzegovina</a></li>
+      <li><a href="#">Bulgaria</a></li>
+      <li><a href="#">Croatia</a></li>
+      <li><a href="#">Czechia</a></li>
+      <li><a href="#">Denmark</a></li>
+      <li><a href="#">Estonia</a></li>
+      <li><a href="#">Finland</a></li>
+      <li><a href="#">France</a></li>
+      <li><a href="#">Germany</a></li>
+      <li><a href="#">Greece</a></li>
+      <li><a href="#">Hungary</a></li>
+      <li><a href="#">Iceland</a></li>
+      <li><a href="#">Ireland</a></li>
+      <li><a href="#">Italy</a></li>
+      <li><a href="#">Latvia</a></li>
+      <li><a href="#">Liechestien</a></li>
+      <li><a href="#">Lithuania</a></li>
+      <li><a href="#">Luxemburg</a></li>
+      <li><a href="#">Malta</a></li>
+      <li><a href="#">Moldova</a></li>
+      <li><a href="#">Monaco</a></li>
+      <li><a href="#">Montengro</a></li>
+      <li><a href="#">Netherlands</a></li>
+      <li><a href="#">North macedonia</a></li>
+      <li><a href="#">Norway</a></li>
+      <li><a href="#">Poland</a></li>
+      <li><a href="#">Portugal</a></li>
+      <li><a href="#">Romania</a></li>
+      <li><a href="#">San marino</a></li>
+      <li><a href="#">Slovakia</a></li>
+      <li><a href="#">Serbia</a></li>
+      <li><a href="#">Slovenia</a></li>
+      <li><a href="#">Spain</a></li>
+      <li><a href="#">Sweden</a></li>
+      <li><a href="#">Switzerland</a></li>
+      <li><a href="#">Ukraine</a></li>
+      <li><a href="#">UK(united kingdom)</a></li>
+      <li><a href="#">Vatican city</a></li>
+      <li><a href="#">Russia(asian)</a></li>
+      <li><a href="#">Turkey(asian)</a></li>
+      <li><a href="#">Afghanistan</a></li>
+      <li><a href="#">Armenia</a></li>
+      <li><a href="#">Azerbaijan</a></li>
+      <li><a href="#">Bahrain</a></li>
+      <li><a href="#">Bangladesh</a></li>
+      <li><a href="#">Bhutan</a></li>
+      <li><a href="#">Brunei</a></li>
+      <li><a href="#">Cambodia</a></li>
+      <li><a href="#">China</a></li>
+      <li><a href="#">Cyprus</a></li>
+      <li><a href="#">Georgia</a></li>
+      <li><a href="#">India</a></li>
+      <li><a href="#">Indonesia</a></li>
+      <li><a href="#">Iran</a></li>
+      <li><a href="#">Iraq</a></li>
+      <li><a href="#">Israel</a></li>
+      <li><a href="#">Japan</a></li>
+      <li><a href="#">Jordan</a></li>
+      <li><a href="#">Kazakhstan</a></li>
+      <li><a href="#">Kyrgyzstan</a></li>
+      <li><a href="#">Laos</a></li>
+      <li><a href="#">Lebanon</a></li>
+      <li><a href="#">Malaysia</a></li>
+      <li><a href="#">Maldives</a></li>
+      <li><a href="#">Mongolia</a></li>
+      <li><a href="#">Myanmar</a></li>
+      <li><a href="#">Nepal</a></li>
+      <li><a href="#">North korea</a></li>
+      <li><a href="#">Oman</a></li>
+      <li><a href="#">Pakistan</a></li>
+      <li><a href="#">Philippines</a></li>
+      <li><a href="#">Palastine</a></li>
+      <li><a href="#">Qatar</a></li>
+      <li><a href="#">Saudi arabia</a></li>
+      <li><a href="#">Singapore</a></li>
+      <li><a href="#">South korea</a></li>
+      <li><a href="#">Sri lanka</a></li>
+      <li><a href="#">Syria</a></li>
+      <li><a href="#">Tajikstan</a></li>
+      <li><a href="#">Thailand</a></li>
+      <li><a href="#">Timor-leste</a></li>
+      <li><a href="#">Turkmenistan</a></li>
+      <li><a href="#">Taiwan</a></li>
+      <li><a href="#">UAE(united arab emirates)</a></li>
+      <li><a href="#">Uzbekistan</a></li>
+      <li><a href="#">Vietnam</a></li>
+      <li><a href="#">Yemen</a></li>
+      <li><a href="#">Algeria</a></li>
+      <li><a href="#">Angola</a></li>
+      <li><a href="#">Benin</a></li>
+      <li><a href="#">Botswana</a></li>
+      <li><a href="#">Burkino faso</a></li>
+      <li><a href="#">Burundi</a></li>
+      <li><a href="#">Cameroon</a></li>
+      <li><a href="#">Cape verde</a></li>
+      <li><a href="#">CAR(central african republic)</a></li>
+      <li><a href="#">Chad</a></li>
+      <li><a href="#">Comoros</a></li>
+      <li><a href="#">Côte de'ivoire</a></li>
+      <li><a href="#">DRC(democratic republic of the congo)</a></li>
+      <li><a href="#">Congo</a></li>
+      <li><a href="#">Dijibouti</a></li>
+      <li><a href="#">Egypt</a></li>
+      <li><a href="#">Equatorial guinea</a></li>
+      <li><a href="#">Eritrea</a></li>
+      <li><a href="#">Eswatini</a></li>
+      <li><a href="#">Ethopia</a></li>
+      <li><a href="#">Gabon</a></li>
+      <li><a href="#">Gambia</a></li>
+      <li><a href="#">Ghana</a></li>
+      <li><a href="#">Guinea</a></li>
+      <li><a href="#">Guinea-bissau</a></li>
+      <li><a href="#">Kenya</a></li>
+      <li><a href="#">Lesotho</a></li>
+      <li><a href="#">Liberia</a></li>
+      <li><a href="#">Libya</a></li>
+      <li><a href="#">Madagascar</a></li>
+      <li><a href="#">Malawi</a></li>
+      <li><a href="#">Mali</a></li>
+      <li><a href="#">Martuania</a></li>
+      <li><a href="#">Martius</a></li>
+      <li><a href="#">Morocco</a></li>
+      <li><a href="#">Mozambique</a></li>
+      <li><a href="#">Nambia</a></li>
+      <li><a href="#">Niger</a></li>
+      <li><a href="#">Nigeria</a></li>
+      <li><a href="#">Rwanda</a></li>
+      <li><a href="#">Sao Tome and Principe</a></li>
+      <li><a href="#">Senegal</a></li>
+      <li><a href="#">Seychelles</a></li>
+      <li><a href="#">Sierra leone</a></li>
+      <li><a href="#">Somalia</a></li>
+      <li><a href="#">South africa</a></li>
+      <li><a href="#">South sudan</a></li>
+      <li><a href="#">Sudan</a></li>
+      <li><a href="#">Tanzania</a></li>
+      <li><a href="#">Togo</a></li>
+      <li><a href="#">Tunisia</a></li>
+      <li><a href="#">Uganda</a></li>
+      <li><a href="#">Zambia</a></li>
+      <li><a href="#">Zimbabwe</a></li>
+      <li><a href="#">Papua new guinea</a></li>
+      <li><a href="#">Australia</a></li>
+      <li><a href="#">Tonga</a></li>
+      <li><a href="#">Fiji</a></li>
+      <li><a href="#">New zealand</a></li>
+      <li><a href="#">Vanatau</a></li>
+      <li><a href="#">Samoa</a></li>
+      <li><a href="#">Solmon islands</a></li>
+      <li><a href="#">Micronesia</a></li>
+      <li><a href="#">Kiribati</a></li>
+      <li><a href="#">Marshall islands</a></li>
+      <li><a href="#">Palau</a></li>
+      <li><a href="#">Nauru</a></li>
+      <li><a href="#">Tuvalu</a></li>
+      <li><a href="#">Antarctica</a></li>
+      <h3>Cities</h3>
+      <li><a href="#">Boston{USA}</a></li>
+      <li><a href="#">Washington{USA}</a></li>
+      <li><a href="#">New york{USA}</a></li>
+      <li><a href="#">New jersey{USA}</a></li>
+      <li><a href="#">Los angeles{USA}</a></li>
+      <li><a href="#">San diego{USA}</a></li>
+      <li><a href="#">San fransisco{USA}</a></li>
+      <li><a href="#">Rio de janerio{Brazil}</a></li>
+      <li><a href="#">Brasilia{Brazil}</a></li>
+      <li><a href="#">Moscow{Russia}</a></li>
+      <li><a href="#">Paris{France}</a></li>
+      <li><a href="#">Madrid{Spain}</a></li>
+      <li><a href="#">Jakarta{Indonesia}</a></li>
+      <li><a href="#">Mumbai{India}</a></li>
+      <li><a href="#">Chennai{India}</a></li>
+      <li><a href="#">Delhi{India}</a></li>
+      <li><a href="#">Kathmandu{Nepal}</a></li>
+      <li><a href="#">Jeddah{Saudi arabia}</a></li>
+      <li><a href="#">Mecca{Saudi arabia}</a></li>
+      <li><a href="#">Riyadh{Saudi arabia}</a></li>
+      <li><a href="#">Cairo{Egypt}</a></li>
+      <li><a href="#">Alexandria{Egypt}</a></li>
+      <li><a href="#">Cape town{South africa}</a></li>
+      <li><a href="#">Pretoria{South africa}</a></li>
+      <li><a href="#">Male{Maldives}</a></li>
+      <li><a href="#">Colombo{Sri lanka}</a></li>
+      <li><a href="#">Bangalore{India}</a></li>
+      <li><a href="#">Mexico city{Mexico}</a></li>
+      <li><a href="#">Toronto{Canada}</a></li>
+      <li><a href="#">Dublin{Ireland}</a></li>
+      <li><a href="#">Hong kong{China}</a></li>
+      <li><a href="#">Tapei{Taiwan}</a></li>
+      <li><a href="#">Osaka{Japan}</a></li>
+      <li><a href="#">Tokyo{Japan}</a></li>
+      <li><a href="#">Seoul{South korea}</a></li>
+      <li><a href="#">Karachi{Pakistan}</a></li>
+      <li><a href="#">Islamabad{Pakistan}</a></li>
+      <li><a href="#">Kabul{Afghanistan}</a></li>
+      <li><a href="#">Anchorage{USA}</a></li>
+      <li><a href="#">Kolkata{India}</a></li>
+      <li><a href="#">Hyderabad{India}</a></li>
+      <li><a href="#">Bern{Switzerland}</a></li>
+      <li><a href="#">Prague{Czechia}</a></li>
+      <li><a href="#">Libson{Portugal}</a></li>
+      <li><a href="#">London{UK}</a></li>
+      <li><a href="#">Berlin{Germany}</a></li>
+      <li><a href="#">Warsaw{Poland}</a></li>
+      <li><a href="#">Thimpu{Bhutan}</a></li>
+      <li><a href="#">Beijing{China}</a></li>
+      <li><a href="#">Shanghai{China}</a></li>
+      <li><a href="#">Xi'an{China}</a></li>
+      <li><a href="#">Pyongyang{North korea}</a></li>
+      <li><a href="#">Hilo{USA}</a></li>
+      <li><a href="#">Honululu{USA}</a></li>
+      <li><a href="#">Athens{Greece}</a></li>
+      <li><a href="#">Algiers{Algeria}</a></li>
+      <li><a href="#">Tunis{Tunisia}</a></li>
+      <li><a href="#">Ankara{Turkey}</a></li>
+      <li><a href="#">Sydney{Australia}</a></li>
+      <li><a href="#">Casablanka{Morocco}</a></li>
+      <li><a href="#">Lagos{Nigeria}</a></li>
+      <li><a href="#">Kuala lampur{Malaysia}</a></li>
+      <li><a href="#">Canberra{Australia}</a></li>
+      <h3>Dependencies,terretories,states & provinces</h3>
+      <li><a href="#">Ohio[USA]</a></li>
+      <li><a href="#">Florida[USA]</a></li>
+      <li><a href="#">Texas[USA]</a></li>
+      <li><a href="#">California[USA]</a></li>
+      <li><a href="#">Isle of man[UK]</a></li>
+      <li><a href="#">Abkhazia[Georgia]</a></li>
+      <li><a href="#">Åland islands[Sweden]</a></li>
+      <li><a href="#">Hong kong[China]</a></li>
+      <li><a href="#">Macau[China]</a></li>
+      <li><a href="#">South ossetia[Georgia]</a></li>
+      <li><a href="#">Somaliland[Somalia]</a></li>
+      <li><a href="#">Western sahara[Morocco]</a></li>
+      <li><a href="#">New york[USA]</a></li>
+      <li><a href="#">Washington[USA]</a></li>
+      <li><a href="#">North dakota[USA]</a></li>
+      <li><a href="#">South dakota[USA]</a></li>
+      <li><a href="#">Rajastan[India]</a></li>
+      <li><a href="#">Madhya pradesh[India]</a></li>
+      <li><a href="#">Northern mariana islands[Micronesia]</a></li>
+      <li><a href="#">American samoa[Samoa]</a></li>
+      <li><a href="#">Zhejing[China]</a></li>
+      <li><a href="#">Guandong[China]</a></li>
+      <li><a href="#">Hunan[China]</a></li>
+      <li><a href="#">Guangxi[China]</a></li>
+      <li><a href="#">Tasmania[Australia]</a></li>
+      <li><a href="#">Rio de janerio[Brazil]</a></li>
+      <li><a href="#">Arizona[USA]</a></li>
+      <li><a href="#">Rhode island[USA]</a></li>
+      <li><a href="#">New mexico[USA]</a></li>
+      <li><a href="#">Utah[USA]</a></li>
+      <li><a href="#">Montana[USA]</a></li>
+      <li><a href="#">Idhaho[USA]</a></li>
+      <li><a href="#">Colorado[USA]</a></li>
+      <li><a href="#">Delaware[USA]</a></li>
+      <li><a href="#">Lowa[USA]</a></li>
+      <li><a href="#">Pennsylvania[USA]</a></li>
+      <li><a href="#">Vermont[USA]</a></li>
+      <li><a href="#">Guam[USA]</a></li>
+      <li><a href="#">Puberto Rico[USA]</a></li>
+      <li><a href="#">Northern Mariana Islands[USA]</a></li>
+      <li><a href="#">Virgina[USA]</a></li>
+      <li><a href="#">West Virgina[USA]</a></li>
+      <li><a href="#">Kansas[USA]</a></li>
+      <li><a href="#">Neveda[USA]</a></li>
+      <li><a href="#">Missouri[USA]</a></li>
+      <li><a href="#">US Virgin Islands[USA]</a></li>
+      <li><a href="#">American Samoa[USA]</a></li>
+      <li><a href="#">Maryland[USA]</a></li>
+      <li><a href="#">Massachusetts[USA]</a></li>
+      <li><a href="#">Minnesota[USA]</a></li>
+      <li><a href="#">Wincosin[USA]</a></li>
+      <li><a href="#">Kentucky[USA]</a></li>
+      <li><a href="#">Tennesee[USA]</a></li>
+      <li><a href="#">Indiana[USA]</a></li>
+      <li><a href="#">Columbia[USA]</a></li>
+      <li><a href="#">Connecticut[USA]</a></li>
+      <li><a href="#">Lousiana[USA]</a></li>
+      <li><a href="#">Alabama[USA]</a></li>
+
+    </ul>
+  </div>
+  <script type="text/javascript">
+  	function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+
+  </script>
+</body>
+</html>

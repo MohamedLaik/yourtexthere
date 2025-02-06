@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Travel</title>
+	<link rel="icon" type="text/css" href="travel.png">
+	<style type="text/css">
+		body {
+	background-color: lightblue;
+}
+.a {
+	border: red dashed 10px;
+	padding: 50px;
+	color: green;
+	margin: 100px;
+	background-color: lightgrey;
+	font-style: italic;
+	font-size: 18px;
+}
+#a {
+	background: pink;
+}
+#b {
+	background: yellow;
+}
+.b,
+.c {
+	border: blue solid 8px;
+	margin-top: 250px;
+	margin-bottom: 250px;
+	margin-left: 20px;
+	margin-right: 1000px;
+	padding: 10px;
+}
+
+	</style>
+</head>
+<body>
+<div class="a">
+	<h1>travelguide</h1>
+	<p>please favorite the following destinations</p>
+</div>
+<div class="b">
+	<img src="https://visitmaldives.s3.amazonaws.com/xRwXeNYW/c/dywu52mi-shareable_image.jpg" alt="maldives photo" height=220>
+	<br>
+	<h3>Maldives</h3>
+	<p id="aa">a place where you can stay</p>
+	<button type="button" onclick='document.getElementById("aa").innerHTML = "You just booked a place in maldives"'>Stay</button>
+	<button type="button" onclick='document.getElementById("fav1").innerHTML = "1,088 favorites"'>❤</button>
+	<br>
+	<p id="fav1">1,087 favorites</p>
+</div>
+<div class="c">
+	<img src="https://fijicdn.azureedge.net/kenticoproductionmedia/fijiweb/media/mediaazure/fiji.travel%20images/promo-tiles/promo-tile_things-to-do_backpacking_410x220.jpg?w=960&mode=min" height=220>
+	<h2>fiji</h2>
+	<p id="bb">A place where you can live</p>
+	<button type="button" onclick='document.getElementById("bb").innerHTML = "You just booked a place in fiji"'>Stay</button>
+	<button type="button" onclick='document.getElementById("fav2").innerHTML = "57 favorites"'>❤</button>
+	<br>
+	<p id="fav2">56 favorites</p>
+</div>
+<div class="c">
+	<img src="https://www.arpansa.gov.au/sites/default/files/styles/govcms_ui_kit_thumbnail/public/1258555933-marshall-islands.jpg?itok=-CTPRA9q" height=220 width=415>
+	<h2>marshall islands</h2>
+	<p id="cc">A place where you can relax</p>
+	<button type="button" onclick='document.getElementById("cc").innerHTML = "You just booked a place in marshall islands"'>Stay</button>
+	<button type="button" onclick='document.getElementById("fav3").innerHTML = "791 favorites"'>❤</button>
+	<br>
+	<p id="fav3">790 favorites</p>
+</div>
+<div class="c">
+	<img src="https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg" alt="eiffel tower" height=220 width=415>
+	<h2>France</h2>
+	<p id="dd">A place where you WILL DIE!! DO NOT BOOK THIS PLACE!!</p>
+	<button type="button" onclick="document.getElementById('dd').innerHTML = 'You just booked a place in France'">Book</button>
+	<button type="button" onclick='document.getElementById("fav3").innerHTML = "6,859,624 favorites"'>❤</button>
+	<br>
+	<p id=" fav4">6,859,623 favorites</p>
+</div>
+<div class="c">
+	<img src="https://dynaimage.cdn.cnn.com/cnn/q_auto,w_1903,c_fill,g_auto,h_1070,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F170706112840-germany.jpg" height=220 width=415>
+	<h2>Germany</h2>
+	<p id="ee">Im warning you</p>
+	<button type="button" onclick='document.getElementById("ee").innerHTML = "You just booked a place in Germany"'>Book</button>
+	<button type="button" onclick='document.getElementById("fav5").innerHTML = " 1,000,000,001 favorites"'>❤</button>
+	<br>
+	<p id="fav5">1,000,000,000 favorites</p>
+	<p><b>Top rated</b></p>
+</div>
+</body>
+</html>

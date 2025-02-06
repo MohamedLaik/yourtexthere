@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shopping!</title>
+	<link rel="icon" type="text/css" href="shopping.png">
+	<style type="text/css">
+		body {
+  margin-bottom: 50em;
+  font-family: system-ui;
+}
+input,
+textarea {
+  font-family: system-ui;
+}
+h1 {
+  text-align: center;
+}
+.list {
+  position: fixed;
+}
+div {
+  text-align: center;
+  background-color: lightblue;
+  height: auto;
+  width: auto;
+  padding: 10px;
+  display: block;
+  float: left;
+  margin-right: 100px;
+  margin-top: 100px;
+  border-radius: 50px;
+  box-shadow: #bebebe 10px 10px 10px 10px;
+  box-sizing: border-box;
+}
+#hm1a,
+#hm,
+#hm1,
+#hm2,
+#hm3,
+#hm4,
+#hm5,
+#hm6 {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  background: red;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+.bdy {
+  margin-left: 100px;
+  margin-right: 100px;
+  border-radius: ;
+  box-shadow: none;
+  border: none;
+  background-color: transparent;
+}
+img {
+  height: 100px;
+}
+
+	</style>
+</head>
+<body>
+<h1>Digital Grocery shopping</h1>
+<div class="list">
+  <img class="cart-btn__icon" src="shopping.png" style="height:50px;">
+  <h4 id="a"></h4>
+  <h4 id="b"></h4>
+  <h4 id="c"></h4>
+  <h4 id="d"></h4>
+  <h4 id="e"></h4>
+  <h4 id="f"></h4>
+  <h4 id="g"></h4>
+  <h4 id="h"></h4>
+  <h4 id="i"></h4>
+  <h4 id="j"></h4>
+  <h4 id="k"></h4>
+  <h4 id="l"></h4>
+  <h4 id="m"></h4>
+  <h4 id="n"></h4>
+  <h4 id="o"></h4>
+  <h4 id="p"></h4>
+  <h4 id="q"></h4>
+  <h4 id="r"></h4>
+</div>
+<div class="bdy">
+  <div>
+    <input id="hm" value="0" style="text-align:center;" readonly=""></input>
+    <img src="https://pngimg.com/uploads/apple/apple_PNG12489.png">
+    <h3 id="head1">Apple</h3>
+    <p id="a1">Price:$4.52</p>
+    <input id="btn1" type="button" value="Add to cart" onclick="document.getElementById('atc').innerHTML = 'Added to cart succesfully!';               document.getElementById('a').innerHTML = 'Apple'; add()">
+    <p id="atc"></p>
+  </div>
+  <!-- -->
+  <div>
+    <input id="hm1a" value="0" style="text-align:center;" readonly="">
+    <img src="https://pngimg.com/uploads/bread/small/bread_PNG2226.png">
+    <h3 id="head2">Bread</h3>
+    <p id="a2">Price:$6.58</p>
+    <input id="btn1" type="button" value="Add to cart" onclick="document.getElementById('atc1').innerHTML = 'Added to cart succesfully!';               document.getElementById('b').innerHTML = 'Bread'; add1()">
+    <p id="atc1"></p>
+  </div>
+  <!-- -->
+  <div>
+    <input id="hm1" value="0" style="text-align:center;" readonly="">
+    <img src="https://pngimg.com/uploads/m_m/m_m_PNG23.png">
+    <h3 id="head1">M&Ms</h3>
+    <p id="a2">Price:$5.78</p>
+    <input id="btn1" type="button" value="Add to cart" onclick="document.getElementById('atc2').innerHTML = 'Added to cart succesfully!';               document.getElementById('b').innerHTML = 'Bread'; add2()">
+    <p id="atc2"></p>
+  </div>
+  <!-- -->
+  <div>
+    <input id="hm2" value="0" style="text-align:center;" readonly="">
+    <img src="https://www.pngall.com/wp-content/uploads/4/Skittles-PNG-Free-Image.png">
+    <h3 id="head1">Skittles</h3>
+    <p id="a1">Price:$2.34</p>
+    <input id="btn1" type="button" value="Add to cart" onclick="document.getElementById('atc3').innerHTML = 'Added to cart succesfully!';               document.getElementById('d').innerHTML = 'Skittles'; add3()">
+    <p id="atc3"></p>
+  </div>
+  <!-- -->
+  <div>
+    <input id="hm3" value="0" style="text-align:center;" readonly="">
+    <img src="https://pngimg.com/uploads/banana/small/banana_PNG104241.png">
+    <h3 id="head1">Banana</h3>
+    <p id="a1">Price:$9.88</p>
+    <input id="btn1" type="button" value="Add to cart" onclick="document.getElementById('atc4').innerHTML = 'Added to cart succesfully!';               document.getElementById('e').innerHTML = 'Banana'; add4()">
+    <p id="atc4"></p>
+  </div>
+  <!-- -->
+  <div>
+    <input id="hm4" value="0" style="text-align:center;" readonly="">
+    <img src="https://i0.wp.com/www.pnglib.com/wp-content/uploads/2020/08/kinder-joy_5f3948caa1d12.png?w=450&ssl=1">
+    <h3 id="head1">Kinder joy</h3>
+    <p id="a1">Price:$4.70</p>
+    <input id="btn1" type="button" value="Add to cart" onclick="document.getElementById('atc5').innerHTML = 'Added to cart succesfully!';               document.getElementById('f').innerHTML = 'Kinder joy'; add5()">
+    <p id="atc5"></p>
+  </div>
+  <!-- -->
+  <div>
+    <input id="hm5" value="0" style="text-align:center;" readonly="">
+    <img src="https://i0.wp.com/www.pnglib.com/wp-content/uploads/2020/01/orange_5e1a0ac035f16.png?resize=707%2C680&ssl=1">
+    <h3 id="head1">Orange</h3>
+    <p id="a1">Price:$10.42</p>
+    <input id="btn1" type="button" value="Add to cart" onclick="document.getElementById('atc6').innerHTML = 'Added to cart succesfully!';               document.getElementById('g').innerHTML = 'Orange'; add6()">
+    <p id="atc6"></p>
+  </div>
+  <!-- -->
+  <div>
+    <input id="hm6" value="0" style="text-align:center;" readonly="">
+    <img src="https://i1.wp.com/www.pnglib.com/wp-content/uploads/2021/02/oragnic-grape_6022ab8636614.png?w=515&ssl=1">
+    <h3 id="head1">Grape</h3>
+    <p id="a1">Price:$6.28</p>
+    <input id="btn1" type="button" value="Add to cart" onclick="document.getElementById('atc7').innerHTML = 'Added to cart succesfully!';               document.getElementById('h').innerHTML = 'Grape'; add7()">
+    <p id="atc7"></p>
+  </div>
+</div>
+<script type="text/javascript">
+	function add() {
+  var one, result;
+  one = Number(document.getElementById("hm").value);
+  result = one + 1;
+  document.getElementById("hm").value = result;
+}
+function add1() {
+  var one, result;
+  one = Number(document.getElementById("hm1a").value);
+  result = one + 1;
+  document.getElementById("hm1a").value = result;
+}
+function add2() {
+  var one, result;
+  one = Number(document.getElementById("hm1").value);
+  result = one + 1;
+  document.getElementById("hm1").value = result;
+}
+function add3() {
+  var one, result;
+  one = Number(document.getElementById("hm2").value);
+  result = one + 1;
+  document.getElementById("hm2").value = result;
+}
+function add4() {
+  var one, result;
+  one = Number(document.getElementById("hm3").value);
+  result = one + 1;
+  document.getElementById("hm3").value = result;
+}
+function add5() {
+  var one, result;
+  one = Number(document.getElementById("hm4").value);
+  result = one + 1;
+  document.getElementById("hm4").value = result;
+}
+function add6() {
+  var one, result;
+  one = Number(document.getElementById("hm5").value);
+  result = one + 1;
+  document.getElementById("hm5").value = result;
+}
+function add7() {
+  var one, result;
+  one = Number(document.getElementById("hm6").value);
+  result = one + 1;
+  document.getElementById("hm6").value = result;
+}
+
+</script>
+</body>
+</html>
